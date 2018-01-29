@@ -70,10 +70,10 @@ public function my_plugin_options() {
     if(isset($_POST)){
         //echo "hello ".$_POST['action'];
         if($_POST['_wp_removed_bro']){
-            remove_addition_value($_POST['action']);
+            $this->remove_addition_value($_POST['action']);
         }
         if($_POST['_wp_add_one']){
-            update_addition_value($_POST['actionz']);
+            $this->update_addition_value($_POST['actionz']);
         }
     }
     $addition = $this->get_addition_user_array();
