@@ -1,5 +1,5 @@
 {
-  "name": "nicholasmole/add-user-field",
+  "name": "nicholasmole/add_user_field",
   "version" : "1.0.0",
   "description": "Plugin is used to add and view user fields meta key data",
   "type": "wordpress-plugin",
