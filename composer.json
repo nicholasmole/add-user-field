@@ -1,0 +1,12 @@
+{
+  "name": "nicholasmole/add-user-field",
+  "version" : "1.0.0",
+  "description": "Plugin is used to add and view user fields meta key data",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Nicholas Mole",
+      "email": "nmole065@gmail.com"
+    }
+  ]
+}

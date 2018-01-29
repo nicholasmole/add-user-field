@@ -1,0 +1,10 @@
+.inner-auf{
+  width: 375px;
+}
+.delete-auf{
+  float: right;
+}
+.each-div-auf{
+  border-bottom: 2px solid rgba(0,0,0,0.5);
+  padding-bottom: 14px;
+}
