@@ -34,7 +34,7 @@ public function my_plugin_menu() {
 //Get addition user field Array
 public function get_addition_user_array(){
   $addition = get_option( 'wpse_addition_user_field' ); 
-
+    $addition = array_values($addition);
   if($addition == ''){ 
       $addition = array('Title','Address2','State','Country','Phone','Website','Cell');
   }
@@ -44,15 +44,17 @@ public function get_addition_user_array(){
 //Update the values
 public function update_addition_value($new_value){
   $addition = $this->get_addition_user_array();
-  
+  $addition = array_values($addition);
   if($new_value !== '' && !(in_array($new_value,$addition)) && !(in_array(strtolower($new_value),$addition)) ){
       array_push($addition, $new_value);
   }
   update_option( 'wpse_addition_user_field', $addition);
 }
+
 //Remove The Values
 public function remove_addition_value($new_value){
   $addition = $this->get_addition_user_array();
+  
   $index = array_search($new_value,$addition);
   if($index !== FALSE){
       unset($addition[$index]);
@@ -77,7 +79,7 @@ public function my_plugin_options() {
         }
     }
     $addition = $this->get_addition_user_array();
-    echo '<h1>cat</h1>';
+  
     //Get confirm - template
     $template = Helpers::get_template_path('AdminPage.php');
     include $template;
