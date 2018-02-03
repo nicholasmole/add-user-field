@@ -4,7 +4,7 @@
             <div class="updated inner-auf" style="border-color:#fff; background: rgba(105,105,105,0.1) ;font-size: 24px;veritcal-align:middle;">
             <div class="auf-title">
                 <div class="auf-col-title">Meta Key </div>
-                <div class="auf-col-title">User Field</div>
+                <div class="auf-col-title">User Profile Label</div>
             </div>
 
             <?php for ($i = 0; $i < count($addition); $i++) { //start loop  ?>
