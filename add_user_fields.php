@@ -2,7 +2,7 @@
  /**
  * Plugin Name: Add User Fields 
  * Description: Create extra user fields
- * Version: 1.0x
+ * Version: 1.1.0
  * Author: Nick Mole
  * Text Domain: auf-add-user-fields
  */
